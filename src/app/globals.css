@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+
+
+@theme {
+  --color-blue-primary: oklch(37.9% .146 265.522);
+  --color-blue-icons: oklch(54.6% .245 262.881)/*blue-900*/;
+  --color-blue-shadow: oklch(92.3% .013 263.755)/*blue-100*/;
+  --color-blue-button: oklch(48.8% .243 264.376)/*blue-700*/;
+  --color-green-boton-white: oklch(62.7% .194 149.214)/*green-600*/;
+  --color-gray-background-secondary: oklch(96.7% .003 264.542)/*gray-100*/;
+  --color-gray-background-cards: oklch(98.5% .002 247.839)/*gray-50*/;
+}
