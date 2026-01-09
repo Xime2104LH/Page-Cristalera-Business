@@ -15,19 +15,6 @@ html, body {
   overflow-x: hidden;
 }
 
-.circle {
-  --size: 180vw;
-  --half-size: 700px;
-
-  width: var(--size);
-  height: var(--half-size);
-  background: #1E3A5F;
-  background: linear-gradient(90deg, rgba(30, 58, 95, 1) 7%, rgba(38, 70, 152, 1) 29%, rgba(62, 146, 213, 1) 69%, rgba(123, 184, 228, 1) 88%, rgba(92, 184, 230, 1) 97%);
-  /* background: #264698; */
-  /* background: linear-gradient(90deg, rgba(38, 70, 152, 1) 0%, rgba(62, 146, 213, 1) 76%, rgba(123, 184, 228, 1) 100%); */
-  border-radius: 0 0 110% 110%;
-}
-
 .hero-section-background {
 
   background: var(--color-blue-light);
