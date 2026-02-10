@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="w-full sm:min-h-40 md:min-h-120 lg:min-h-190 hero-section-background flex ">
-      <div className="p-4 md:p-16 lg:w-1/2 lg:p-24">
+    <div className="w-full  hero-section-background flex border border-red-600 ">
+      <div className="p-4 md:p-16 lg:w-1/2 lg:p-10 xl:p-20 2xl:px-50 2xl:py-20">
         <div className="text-blue-primary text-sm bg-blue-light/20 py-1 px-4 rounded-full w-fit flex items-center gap-2">
           <span className=" inline-block size-2 rounded-full bg-blue-secondary animate-pulse"></span>
           Más de 20 años de experiencia
@@ -36,16 +36,18 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="hidden relative lg:flex lg:items-center lg:justify-center lg:pr-24 w-1/2">
-        <div className="absolute top-[25%] left-18 flex flex-col bg-white rounded-2xl py-5 px-6">
-          <span className="text-blue-primary text-xl">Ventanas</span>
-          <span className="text-gray-500 text-sm">Diseño personalizado</span>
+      <div className="hidden lg:flex lg:items-center lg:justify-center lg:p-10 w-1/2">
+        <div className="relative w-125">
+          <div className="absolute top-21.5 -left-11.75 flex flex-col bg-white rounded-2xl p-4">
+            <span className="text-blue-primary text-base">Ventanas</span>
+            <span className="text-gray-500 text-sm">Diseño personalizado</span>
+          </div>
+          <div className="absolute flex flex-col p-4 bg-white rounded-2xl lg:-right-5 lg:bottom-20 xl:-right-20 xl:bottom-30.5">
+            <span className="text-blue-secondary text-base">Closets</span>
+            <span className="text-gray-500 text-sm">Máximo aprovechamiento</span>
+          </div>
+          <Image src="/trabajo-ventanas-proyecto-2.jpeg" alt="Trabajo de ventanas" width={550} height={700} className="rounded-[18px]" />
         </div>
-        <div className="absolute top-[55%] right-50 xl:right-20 flex flex-col bg-white rounded-2xl py-5 px-6">
-          <span className="text-blue-secondary text-xl">Closets</span>
-          <span className="text-gray-500 text-sm">Máximo aprovechamiento</span>
-        </div>
-        <Image src="/trabajo-ventanas-proyecto-2.jpeg" alt="Trabajo de ventanas" width={550} height={700} className="rounded-[18px]" />
       </div>
     </div>
   )
