@@ -1,4 +1,4 @@
-import ImageProduct from '@/components/General/imageProduct'
+import ImageProduct from '@/components/General/ImageProduct'
 
 const products = [
   {

@@ -8,15 +8,14 @@ interface props {
 
 const ImageProduct = ({ imageUrl, title, description}: props) => {
   return (
-    <div className='border border-gray-100 rounded-xl py-8'>
-      <Image src={imageUrl} alt="title" width={280}  height={50} className='m-auto'/>
+    <div className='border border-gray-100 rounded-xl py-8 mb-10 hover:'>
+      <Image src={imageUrl} alt="title" width={280} height={50} className='m-auto w-[100%] h-50'/>
       <div className='px-8'>
         <h3 className='text-2xl font-bold my-6'>{title}</h3>
         <p className='text-xl text-gray-500'>{description}</p>
       </div>
     </div>
   )
-
 }
 
 export default ImageProduct;
