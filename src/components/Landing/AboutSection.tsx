@@ -1,5 +1,6 @@
 
 import { Shield, Award, Users, Clock } from "lucide-react"
+import { HeaderSections } from "../General/HeaderSections";
 
 const features = [
   {
@@ -27,19 +28,17 @@ const features = [
 
 const AboutSection = () => { 
   return (
-    <div className="w-full bg-blue-primary/1">
-      <div className=" max-h-screen text-center bg-muted/30 py-30 lg:px-50 ">
-        <h3 className="text-2xl text-blue-secondary mb-6">Sobre nosotros</h3>
-        <h1 className="text-4xl font-bold mb-6 px-10 lg:text-5xl">
-          Expertos en soluciones de vidrio y aluminio para tu hogar
-        </h1>
-        <p className="text-2xl text-gray-500 px-6">
-          En Cristalera Hernández nos dedicamos a transformar espacios con
-          productos de la más alta calidad. Nuestro compromiso es brindarte
-          soluciones que combinen funcionalidad, estética y durabilidad.
-        </p>
+    <div className="w-full bg-blue-primary/1 text-center pt-20">
+      <div className="lg:px-80">
+        <HeaderSections 
+          wordKey="Sobre nosotros"
+          title="Expertos en soluciones de vidrio y aluminio para tu hogar"
+          description="En Cristalera Hernández nos dedicamos a transformar espacios con
+            productos de la más alta calidad. Nuestro compromiso es brindarte
+            soluciones que combinen funcionalidad, estética y durabilidad."
+        />
       </div>
-      <div className="p-6 pb-15 lg:px-18 lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-8 2xl:gap-16">
+      <div className="p-6 py-15 lg:px-18 lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-8 2xl:gap-16">
         {features.map((item) => {
           const Icon = item.icon;
           return (
